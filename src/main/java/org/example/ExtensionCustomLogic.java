@@ -85,7 +85,7 @@ public class ExtensionCustomLogic extends CallbackAdapter {
             if (lower.startsWith("/weather")) {
                 String location = extractArgument(text);
                 if (location == null || location.length() == 0) {
-                    api.sendText(chatId, "Usage: /weather <city>\nExample: /weather London\n\nTip: Provide a city name.", reference, null, userId, 0, false, chatSettings, null, null, null, appId);
+                    api.sendText(chatId, "Usage: /weather <city>\nExample: /weather London111\n\nTip: Provide a city name.", reference, null, userId, 0, false, chatSettings, null, null, null, appId);
                     return;
                 }
                 String reply = fetchCurrentWeather(location);
